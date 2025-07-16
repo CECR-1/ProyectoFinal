@@ -1,6 +1,6 @@
 // Datos de películas 
 const moviesData = {
-    featured: [
+    newReleases: [
         {
             id: 1,
             title: "Duna",
@@ -12,7 +12,7 @@ const moviesData = {
             cast: "Timothée Chalamet, Rebecca Ferguson, Oscar Isaac",
             classification: "PG-13",
             description: "Un noble hereda el peligroso planeta desértico Arrakis, la única fuente de la sustancia más valiosa del universo.",
-            poster: "assets/images/1.jpg",
+            poster: "../assets/images/1.jpg",
             trailer: "TTgk_iT8Uts"
         },
         {
@@ -26,7 +26,7 @@ const moviesData = {
             cast: "Tom Holland, Zendaya, Benedict Cumberbatch",
             classification: "PG-13",
             description: "Peter Parker busca la ayuda del Doctor Strange cuando su identidad secreta como Spider-Man es revelada.",
-            poster: "assets/images/2.jpg",
+            poster: "../assets/images/2.jpg",
             trailer: "JfVOs4VSpmA"
         },
         {
@@ -40,7 +40,7 @@ const moviesData = {
             cast: "Tom Cruise, Jennifer Connelly, Miles Teller",
             classification: "PG-13",
             description: "Después de más de treinta años de servicio, Maverick es instructor de pilotos y debe enfrentar su pasado.",
-            poster: "assets/images/3.jpg",
+            poster: "../assets/images/3.jpg",
             trailer: "qSqVVswa420"
         },
         {
@@ -54,11 +54,9 @@ const moviesData = {
             cast: "Robert Pattinson, Zoë Kravitz, Jeffrey Wright",
             classification: "PG-13",
             description: "Batman investiga la corrupción en Gotham City mientras persigue al Enigma, un asesino en serie que se dirige a la élite de Gotham.",
-            poster: "assets/images/4.jpg",
+            poster: "../assets/images/4.jpg",
             trailer: "mqqft2x_Aa4"
-        }
-    ],
-    newReleases: [
+        },
         {
             id: 5,
             title: "Jurassic World: Dominion",
@@ -70,7 +68,7 @@ const moviesData = {
             cast: "Chris Pratt, Bryce Dallas Howard, Sam Neill",
             classification: "PG-13",
             description: "Cuatro años después de la destrucción de Isla Nublar, los dinosaurios ahora conviven con los humanos en todo el mundo.",
-            poster: "assets/images/5.jpg",
+            poster: "../assets/images/5.jpg",
             trailer: "fb5ELWi-ekk"
         },
         {
@@ -84,7 +82,7 @@ const moviesData = {
             cast: "Benedict Cumberbatch, Elizabeth Olsen, Chiwetel Ejiofor",
             classification: "PG-13",
             description: "El Dr. Strange viaja a lo desconocido con la ayuda de aliados místicos y antiguos y nuevos para enfrentar a un nuevo adversario misterioso.",
-            poster: "assets/images/6.jpeg",
+            poster: "../assets/images/6.jpeg",
             trailer: "aWzlQ2N6qqg"
         },
         {
@@ -98,7 +96,7 @@ const moviesData = {
             cast: "Letitia Wright, Lupita Nyong'o, Danai Gurira",
             classification: "PG-13",
             description: "El pueblo de Wakanda lucha para proteger su nación de las potencias mundiales que intervienen después de la muerte del rey T'Challa.",
-            poster: "assets/images/7.jpg",
+            poster: "../assets/images/7.jpg",
             trailer: "RlOB3UALvrQ"
         },
         {
@@ -112,7 +110,7 @@ const moviesData = {
             cast: "Sam Worthington, Zoe Saldana, Sigourney Weaver",
             classification: "PG-13",
             description: "Jake Sully vive con su nueva familia en el planeta Pandora. Cuando una amenaza familiar regresa, Jake debe trabajar con Neytiri para proteger su hogar.",
-            poster: "assets/images/8.jpg",
+            poster: "../assets/images/8.jpg",
             trailer: "d9MyW72ELq0"
         }
     ]
@@ -135,9 +133,9 @@ hamburger.addEventListener('click', () => {
 // Cargar películas en las secciones
 function loadMovies() {
     // Películas destacadas
-    moviesData.featured.forEach(movie => {
-        featuredMoviesContainer.appendChild(createMovieCard(movie));
-    });
+    // moviesData.featured.forEach(movie => {
+    //     featuredMoviesContainer.appendChild(createMovieCard(movie));
+    // });
 
     // Nuevos lanzamientos
     moviesData.newReleases.forEach(movie => {

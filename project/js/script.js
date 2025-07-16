@@ -172,12 +172,6 @@ function createMovieCard(movie) {
         </div>
         <div class="card-info">
             <h3>${movie.title}</h3>
-            <p>${movie.description}</p>
-            <div class="movie-meta">
-                <span>${movie.year}</span>
-                <span>${movie.classification}</span>
-                <span class="rating">${movie.rating}/10</span>
-            </div>
         </div>
     `;
     return card;
